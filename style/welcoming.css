@@ -1,0 +1,241 @@
+.welcoming {
+    background-image: url(/public/background.svg);
+    background-position: center;
+    background-size: cover;
+    color: var(--clr-mono6);
+}
+
+.welcoming div.heading{
+    padding: 3rem 5rem;
+    background-color: var(--clr-white);
+    text-align: center;
+}
+
+.welcoming div.heading h1 {
+    font-size: var(--size-3xl);
+    color: var(--clr-mono8);
+    font-weight: 400;
+}
+
+.wellcoming-description {
+    padding: 2rem 5rem;
+}
+
+.wellcoming-description .img-wrapper {
+    width: 30rem;
+    height: 30rem;
+    padding: 1rem 3rem;
+    background-color: var(--clr-white);
+    float: right;
+    box-shadow: 0 2px 30px 0 black;
+    overflow: hidden;
+}
+
+.wellcoming-description .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    transition: all ease-in-out 0.3s;
+}
+
+.wellcoming-description .img-wrapper:hover img {
+    transform: scale(1.07);
+}
+
+.welcoming-speach {
+    max-width: 70ch;
+}
+
+.welcoming-speach .title {
+    font-size: var(--size-4xl);
+    color: var(--clr-mono7);
+    margin-bottom: 2rem;
+}
+
+.welcoming-speach p {
+    margin-bottom: 1rem;
+    font-size: var(--size-base);
+    color: var(--clr-mono6);
+}
+
+.welcoming-speach a {
+    margin-top: 2rem;
+    border-radius: 2rem;
+    color: var(--clr-primary);
+    border: 2px solid var(--clr-primary);
+    background-color: transparent;
+    transition: all ease-in-out 0.3s;
+}
+
+.welcoming-speach a:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+}
+
+
+/* 2xl */
+/* @media (max-width: 1536px) {} */
+
+/* xl */
+@media (max-width: 1280px) { 
+    .welcoming div.heading h1 {
+        font-size: var(--size-3xl);
+    }
+    
+    .wellcoming-description {
+        padding: 2rem 5rem;
+    }
+    
+    .wellcoming-description .img-wrapper {
+        float: right;
+    }
+    
+    .welcoming-speach .title {
+        font-size: var(--size-4xl);
+    }
+    
+    .welcoming-speach p {
+        font-size: var(--size-base);
+    }
+    
+}
+
+/* lg */
+@media (max-width: 1024px) {  
+    .welcoming div.heading h1 {
+        font-size: var(--size-2xl);
+    }
+    
+    .wellcoming-description {
+        padding: 2rem 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .wellcoming-description .img-wrapper {
+        float: none;
+    }
+    
+    .welcoming-speach .title {
+        font-size: var(--size-3xl);
+    }
+    
+    .welcoming-speach p {
+        font-size: var(--size-base);
+    }
+}
+
+/* md */
+@media (max-width: 768px) {
+    .welcoming {
+        padding: 3rem 5rem;
+    }
+
+    .welcoming div.heading{
+        display: none;
+    }
+    
+    .wellcoming-description {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .wellcoming-description .img-wrapper {
+        float: none;
+        max-width: 25rem;
+        max-height: 25rem;
+    }
+    
+    .welcoming-speach .title {
+        font-size: var(--size-2xl);
+    }
+    
+    .welcoming-speach p {
+        font-size: var(--size-sm);
+    }
+    
+    .welcoming-speach a {
+        font-size: var(--size-sm);
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .welcoming {
+        padding: 3rem 5rem;
+    }
+    
+    .wellcoming-description .img-wrapper {
+        max-width: 20rem;
+        max-height: 20rem;
+    }
+    
+    .welcoming-speach .title {
+        font-size: var(--size-xl);
+    }
+    
+    .welcoming-speach p {
+        font-size: var(--size-xs);
+    }
+    
+    .welcoming-speach a {
+        font-size: var(--size-xs);
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .welcoming {
+        padding: 1rem 3rem;
+    }
+    
+    .wellcoming-description .img-wrapper {
+        max-width: 20rem;
+        max-height: 20rem;
+    }
+    
+    .welcoming-speach .title {
+        font-size: var(--size-xl);
+    }
+    
+    .welcoming-speach p {
+        font-size: var(--size-xs);
+    }
+    
+    .welcoming-speach a {
+        font-size: var(--size-xs);
+    }
+}
+
+
+/* xxs */
+@media (max-width: 360px) {
+    .welcoming {
+        padding: 0.5rem 1rem;
+    }
+    
+    .wellcoming-description {
+        gap: 1rem;
+    }
+    
+    .wellcoming-description .img-wrapper {
+        max-width: 17rem;
+        max-height: 17rem;
+    }
+    
+    .welcoming-speach .title {
+        font-size: var(--size-lg);
+    }
+    
+    .welcoming-speach p {
+        font-size: var(--size-xxs);
+    }
+    
+    .welcoming-speach a {
+        font-size: var(--size-xxs);
+    }
+}

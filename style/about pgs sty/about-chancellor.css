@@ -1,0 +1,52 @@
+.about-chancellor {
+    padding: 3rem 5rem;
+    background-color: var(--clr-mono2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-chancellor__wrapper {
+    display: flex;
+    align-items: center;
+    background-color: var(--clr-white);
+    width: fit-content;
+    padding: 3rem 1rem;
+    gap: 1rem;
+}
+
+.about-chancellor__wrapper-img {
+    background-color: white;
+    padding: 1rem;
+}
+
+.about-chancellor__wrapper-img img {
+}
+
+.chancellor-speech {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 60ch;
+}
+
+.chancellor-speech h2 {
+    font-size: var(--size-4xl);
+    color: var(--clr-secondary);
+}
+
+.chancellor-speech a {
+    width: fit-content;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    border-radius: 28px;
+    animation: fallAnimation 1s ease-in-out .6s forwards;
+}
+
+.chancellor-speech a:hover {
+    background-color: var(--clr-accent);
+    color: var(--clr-primary);
+}

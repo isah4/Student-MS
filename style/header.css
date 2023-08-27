@@ -1,0 +1,366 @@
+.navbar {
+    width: 100%;
+    height: 7rem;
+    background-color: var(--clr-white);
+    display: flex;
+    list-style: none;
+    padding: 0 5rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .navbar__logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.navbar .navbar__logo img {
+    display: inline-block;
+    width: 8rem;
+    height: inherit;
+}
+
+.navbar .navbar__logo .navbar__logo-title {
+    align-self: flex-start;
+    padding: 0.5rem 0 0 0;
+    margin-left: -1rem;
+    font-family: 'Lora', serif;
+    color: var(--clr-primary);
+
+}
+
+.navbar .navbar__logo .navbar__logo-title h1 {
+    font-size: var(--size-5xl);
+}
+
+.navbar .navbar__logo .navbar__logo-title h3 {
+    font-size: var(--size-2xl);
+    padding-left: 1rem;
+}
+
+.hamburger {
+    width: 3rem;
+    height: 3rem;
+    display: none;
+}
+
+.navbar-menu {
+    display: flex;
+}
+
+.navbar-menu ul.sub-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+
+.navbar-menu ul.sub-menu li.sub-menu__list a.menu{
+    color: var(--clr-mono6);
+    font-size: var(--size-base);
+    letter-spacing: -.05rem;
+    word-spacing: -.2rem;
+    padding: 0 0.5rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.navbar-menu ul.sub-menu li.sub-menu__list a.menu:hover {
+    color: var(--clr-primary);
+}
+
+.navbar-menu ul.sub-menu li.sub-menu__list:first-child a {
+    padding-left: 0;
+}
+
+
+.sub-header__dropdrown {
+    position: absolute;
+    top: 9.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: var(--clr-secondary);
+    pointer-events: none;
+    opacity: 0;
+    z-index: 999;
+    box-shadow: 0 0 40px 1000px rgba(255, 255, 255, 0.2);
+
+}
+
+.dropdown {
+    width: 100%;
+    height: 100% ;
+    padding: 1rem;
+    margin-top: 0.1rem;
+    background-color: var(--clr-white);
+    display: flex;
+    gap: 2rem;
+}
+
+.dropdown-list {
+    list-style: none;
+}
+.dropdown-list2 {
+    padding-top: 3.5rem;
+}
+
+.dropdown-list h3 {
+    font-size: var(--size-2xl);
+    font-weight: 400;
+    margin-bottom:1.5rem;
+}
+
+.dropdown-list li a {
+    color: var(--clr-secondary);
+    font-size: var(--size-xs);
+    display: flex;
+    gap: 0.2rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--clr-mono6);
+    width: 16rem;
+    position: relative;
+
+}
+
+.dropdown-list li a:hover {
+    color: var(--clr-primary);
+}
+
+.dropdown-list li a span {
+    transition: transform 0.3s ease-in-out;
+}
+
+.dropdown-list li:last-child a {
+    border-radius: 0px;
+}
+
+.dropdown-list li a .icons {
+    color: var(--clr-primary) !important;
+    position: absolute;
+    max-width: 2rem;
+    max-height: 2rem; 
+    display: none;
+ 
+}
+
+.dropdown-list li a:hover span {
+    transform: translateX(2.3rem);
+}
+
+
+.dropdown-list li a:hover .icons {
+    display: block;
+    color: var(--clr-primary);
+}
+
+.our-images h3 {
+    font-size: var(--size-2xl);
+    font-weight: 400;
+    margin-bottom:1.5rem;
+}
+
+.our-images-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.our-images-wrapper .our-images-card {
+    width: 18rem;
+    height: 11rem;
+    overflow: hidden;
+    color: var(--clr-white);
+    font-size: var(--size-4xl);
+    font-size: 800;
+    text-decoration: none;
+    position: relative;
+}
+
+.our-images-wrapper .our-images-card .background-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.our-images-wrapper .our-images-card .background-wrapper .card-background {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    transition: all ease-in-out 0.3s;
+
+}
+
+.our-images-wrapper .our-images-card:hover .card-background {
+    transform: scale(1.1);
+}
+
+.our-images-wrapper .our-images-card.card1 .card-background {
+    background-image: url(/public/young-students-attending-university-class.jpg);
+}
+.our-images-wrapper .our-images-card.card2 .card-background {
+    background-image: url(/public/male-athletes-playing-rugby-field.jpg);
+}
+.our-images-wrapper .our-images-card.card3 .card-background {
+    background-image: url(/public/group-five-african-college-students-spending-time-together-campus-university-yard-black-afro-friends-sitting-grass-studying-with-laptops.jpg);
+}
+.our-images-wrapper .our-images-card.card4 .card-background {
+    background-image: url(/public/group-young-afro-american-female-students-dressed-black-graduation-gown-campus-as-background.jpg);
+}
+
+.our-images-card-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+/* why us menu  */
+
+.why-usdrop .our-images .our-images-wrapper .our-images-card {
+    top: 80%;
+}
+
+
+/* learning menu */
+.learning {
+    height: 20rem;
+}
+
+.learning .our-images .our-images-wrapper {
+    grid-template-columns: 1fr;
+}
+
+.learning .our-images .our-images-wrapper .our-images-card {
+    height: 6rem;
+    top: 90%;
+}
+
+
+/* wellbeing  menu*/
+
+.wellbeing .our-images .our-images-wrapper .our-images-card {
+    top: 60%;
+}
+
+/* enrollment menu */
+
+
+
+
+
+/* community menu */
+
+
+/* latest news */
+
+
+
+/* nacos */
+
+.nacos {
+    height: 15rem;
+}
+
+
+/* 2xl */
+@media (max-width: 1536px) {
+
+}
+
+/* xl */
+@media (max-width: 1280px) {
+    .navbar {
+        padding: 0 4rem;
+        gap: 0;
+    }
+
+    .navbar .navbar__logo img {
+        width: 6rem;
+    }
+    
+    .navbar .navbar__logo .navbar__logo-title h1 {
+        font-size: var(--size-4xl);
+    }
+    
+    .navbar .navbar__logo .navbar__logo-title h3 {
+        font-size: var(--size-xl);
+    }
+
+    .navbar-menu ul.sub-menu li.sub-menu__list a.menu{
+        color: var(--clr-mono6);
+        font-size: var(--size-base);
+        padding: 0 0.4rem;
+    }
+}
+
+/* lg */
+@media (max-width: 1024px) {  
+    .navbar .navbar__logo img {
+        width: 6rem;
+    }
+    
+    .navbar .navbar__logo .navbar__logo-title h1 {
+        font-size: var(--size-4xl);
+    }
+    
+    .navbar .navbar__logo .navbar__logo-title h3 {
+        font-size: var(--size-1xl);
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* md */
+/* @media (max-width: 768px) {} */
+
+/* sm */
+@media (max-width: 640px) {
+    .navbar .navbar__logo img {
+        width: 5rem;
+    }
+    
+    .navbar .navbar__logo .navbar__logo-title h1 {
+        font-size: var(--size-3xl);
+    }
+    
+    .navbar .navbar__logo .navbar__logo-title h3 {
+        font-size: var(--size-xl);
+    }
+
+    .hamburger {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .navbar {
+        padding: 0 1rem;
+    }
+}
+
+/* xxs */
+@media (width < 475px) {
+    .navbar {
+        padding: 0 0rem;
+    }
+
+    .navbar .navbar__logo {
+        padding: 0rem;
+    }
+}

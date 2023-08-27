@@ -1,0 +1,170 @@
+.life-at-wardiere {
+    background-image: url(/public/pexels-george-dolgikh-1326946.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 3rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.life-at-wardiere__description {
+    background-color: var(--clr-white);
+    text-align: center;
+    max-width: 55ch;
+    height: 100%;
+    padding: 3rem 3rem;
+    letter-spacing: -.05rem;
+}
+
+.life-at-wardiere__description h2 {
+    font-size: var(--size-4xl);
+    color: var(--clr-mono7);
+    margin-bottom: 1rem;
+}
+
+.life-at-wardiere__description .first {
+    font-size: var(--size-lg);
+    margin-bottom: 1rem;
+}
+
+.life-at-wardiere__description .second {
+    font-size: var(--size-sm);
+    color: var(--clr-mono6);
+    margin-bottom: 2rem;
+}
+
+.life-at-wardiere__description div {
+    text-align: left;
+    padding-left: 1rem;
+    border-left: 5px solid rgba(0, 15, 51, 0.3);
+    margin-bottom: 2rem;
+}
+
+.life-at-wardiere__description div .last {
+    font-weight: 800;
+    font-size: var(--size-base);
+}
+
+.life-at-wardiere__description a {
+    margin-top: 2rem;
+    border-radius: 2rem;
+    color: var(--clr-primary);
+    border: 2px solid var(--clr-primary);
+    background-color: transparent;
+    transition: all ease-in-out 0.3s;
+}
+
+.life-at-wardiere__description a:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+}
+
+
+
+
+/* 2xl */
+/* @media (max-width: 1536px) {} */
+
+/* xl */
+/* @media (max-width: 1280px) {} */
+
+/* lg */
+/* @media (max-width: 1024px) {} */
+
+/* md */
+/* @media (max-width: 768px) {} */
+
+/* sm */
+@media (max-width: 640px) {
+    .life-at-wardiere {
+        padding: 3rem 5rem;
+    }
+    
+    .life-at-wardiere__description {
+        padding: 3rem 3rem;
+    }
+    
+    .life-at-wardiere__description h2 {
+        font-size: var(--size-3xl);
+    }
+    
+    .life-at-wardiere__description .first {
+        font-size: var(--size-base);
+    }
+    
+    .life-at-wardiere__description .second {
+        font-size: var(--size-sm);
+    }
+    
+    .life-at-wardiere__description div .last {
+        font-size: var(--size-sm);
+    }
+    
+    .life-at-wardiere__description a {
+        font-size:var(--size-sm);
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .life-at-wardiere {
+        padding: 1rem 3rem;
+    }
+    
+    .life-at-wardiere__description {
+        padding: 1rem 1rem;
+    }
+    
+    .life-at-wardiere__description h2 {
+        font-size: var(--size-2xl);
+    }
+    
+    .life-at-wardiere__description .first {
+        font-size: var(--size-base);
+    }
+    
+    .life-at-wardiere__description .second {
+        font-size: var(--size-sm);
+    }
+    
+    .life-at-wardiere__description div .last {
+        font-size: var(--size-sm);
+    }
+    
+    .life-at-wardiere__description a {
+        font-size:var(--size-sm);
+    }
+}
+
+/* xxs */
+@media (max-width: 360px) {
+    .life-at-wardiere {
+        padding: 0.5rem 1rem;
+    }
+    
+    .life-at-wardiere__description {
+        padding: 1rem 1rem;
+    }
+    
+    .life-at-wardiere__description h2 {
+        font-size: var(--size-xl);
+    }
+    
+    .life-at-wardiere__description .first {
+        font-size: var(--size-sm);
+    }
+    
+    .life-at-wardiere__description .second {
+        font-size: var(--size-xs);
+    }
+    
+    .life-at-wardiere__description div .last {
+        font-size: var(--size-xs);
+    }
+    
+    .life-at-wardiere__description a {
+        font-size:var(--size-xs);
+    }
+}

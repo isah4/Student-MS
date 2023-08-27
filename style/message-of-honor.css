@@ -1,0 +1,137 @@
+.message-of-honor {
+    background-image: url(/public/africa.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem 5rem;
+    display: flex;
+}
+
+.message-of-honor__message {
+    background-color: var(--clr-white);
+    flex: 1;
+    height: fit-content;
+    text-align: center;
+    padding: 3rem;
+}
+
+.message-of-honor__message h2 {
+    font-size: var(--size-4xl);
+    color: rgba(0, 15, 51,);
+    margin-bottom: 1rem;
+}
+
+.message-of-honor__message p {
+    font-style: italic;
+}
+
+.message-of-honor__flags {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.message-of-honor__flags img {
+    width: 15rem;
+    height: 10rem;
+}
+
+/* 2xl */
+/* @media (max-width: 1536px) {} */
+
+/* xl */
+/* @media (max-width: 1280px) {} */
+
+/* lg */
+@media (max-width: 1024px) {
+}
+
+/* md */
+@media (max-width: 768px) {
+    .message-of-honor {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .message-of-honor__message {
+        background-color: var(--clr-white);
+        flex: 1;
+        height: fit-content;
+        text-align: center;
+        padding: 3rem;
+    }
+    
+    .message-of-honor__message h2 {
+        font-size: var(--size-2xl);
+    }
+    
+    .message-of-honor__message p {
+        font-size: var(--size-base);
+    }
+    
+    .message-of-honor__flags img {
+        width: 15rem;
+        height: 10rem;
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .message-of-honor {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .message-of-honor__message {
+        padding: 1rem;
+    }
+    
+    .message-of-honor__message h2 {
+        font-size: var(--size-xl);
+    }
+    
+    .message-of-honor__message p {
+        font-size: var(--size-sm);
+    }
+    
+    .message-of-honor__flags img {
+        width: 10rem;
+        height: 5rem;
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {   
+    .message-of-honor {
+        padding: 1rem 3rem;
+    }
+
+    .message-of-honor__message h2 {
+        font-size: var(--size-xl);
+    }
+    
+    .message-of-honor__message p {
+        font-size: var(--size-xs);
+    }
+    
+}
+
+/* xxs */
+@media (max-width: 360px) {
+    .message-of-honor {
+        padding: 0.5rem 1rem;
+    }
+
+    .message-of-honor__message h2 {
+        font-size: var(--size-lg);
+    }
+    
+    .message-of-honor__message p {
+        font-size: var(--size-xxs);
+    }
+}

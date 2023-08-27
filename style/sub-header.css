@@ -1,0 +1,170 @@
+header .sub-header {
+    background-color: var(--clr-primary);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding:0 5rem;
+    gap: 2rem;
+}
+
+header .sub-header a {
+    padding: 0.4rem 0;
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: var(--size-sm);
+}
+
+header .sub-header button svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--clr-white);
+}
+
+header .sub-header .select {
+    padding: 0.4rem 0;
+    height: inherit;
+    cursor: pointer;
+    position: relative;
+    min-width: max-content;
+}
+
+header .sub-header .select ul { 
+    position: absolute;
+    top: 2.2rem;
+    left: -3rem;
+    list-style: none;
+    color: var(--clr-white);
+    background-color: var(--clr-secondary);
+    font-size: var(--size-sm);
+    font-weight: 400;
+    width: 10rem;
+    padding: 0.2rem;
+    white-space: nowrap;
+    border-radius: 0.2rem;
+    display: none;
+    z-index: 10;
+}
+
+header .sub-header .select.quick-link ul {
+    width: 13rem;
+}
+
+header .sub-header .select ul .arrow {
+    position: absolute;
+    top: -0.6rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 0;
+    height: 0;
+    border-left: var(--size-xxs) solid transparent;
+    border-right: var(--size-xxs) solid transparent;
+    border-bottom: var(--size-xs) solid var(--clr-secondary);
+}
+
+
+header .sub-header .select:hover ul {
+    display: flex;
+    flex-direction: column;
+}
+
+header .sub-header .select .select-head {
+    display: flex;
+    align-items: center;
+    font-size: var(--size-sm);
+    color: var(--clr-white);
+    gap: 0.4rem;
+}
+
+header .sub-header .select .select-head svg {
+    padding: 0.4rem 0;
+    width: var(--size-sm);
+    width: var(--size-sm);
+}
+
+header .sub-header .select ul li a{
+    display: block;
+    text-decoration: none;
+    color: var(--clr-white);
+}
+
+header .sub-header .select ul li a:hover {
+    background-color: var(--clr-accent);
+    padding: 0 0.2rem;
+}
+
+
+/* 2xl */
+/* @media (max-width: 1536px) {} */
+
+/* xl */
+/* @media (max-width: 1280px) {} */
+
+/* lg */
+/* @media (max-width: 1024px) {} */
+
+/* md */
+@media (max-width: 768px) {
+    header .sub-header {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    header .sub-header a {
+        font-size: var(--size-sm);
+    }
+    
+    header .sub-header button svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    
+    header .sub-header .select ul { 
+        font-size: var(--size-sm);
+    }
+    
+    header .sub-header .select .select-head {
+        font-size: var(--size-sm);
+    }
+    
+    header .sub-header .select .select-head svg {
+        width: var(--size-sm);
+        width: var(--size-sm);
+    }
+    
+}
+
+/* sm */
+/* @media (max-width: 640px) {} */
+
+/* xs */
+@media (max-width: 475px) {
+    header .sub-header {
+        padding:0 1rem;
+    }
+
+    header .sub-header .select ul { 
+        top: 2.2rem;
+        left: -1rem;
+    }
+
+    header .sub-header .select.insite ul { 
+        top: 2.2rem;
+        left: -2rem;
+    }
+}
+
+/* xxs */
+@media (max-width: 360px) {
+
+    header .sub-header .select ul { 
+        top: 2.2rem;
+        left: 0rem;
+    }
+
+    header .sub-header .select.insite ul { 
+        top: 2.2rem;
+        left: -1rem;
+    }
+}

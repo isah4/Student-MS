@@ -1,0 +1,130 @@
+.prospectus-explore {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 5rem;
+    background-color: var(--clr-secondary);
+}
+
+.prospectus-explore .prospectus .prospectus__download-link1 {
+    color: var(--clr-white);
+    font-weight: 800;
+    font-size: var(--size-2xl);
+}
+
+.prospectus-explore .prospectus .prospectus__download-link2 {
+    color: var(--clr-accent);
+    font-size: var(--size-2xl);
+}
+
+.prospectus-explore .prospectus .prospectus__download-link3 {
+    color: var(--clr-white);
+}
+
+.explore-enroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore-enroll div {
+    padding: 1rem;
+    border-left: 2px solid var(--clr-white);
+}
+
+.explore-link1 {
+    color: var(--clr-white);
+}
+
+.explore-link2 {
+    color: var(--clr-accent);
+    font-size: var(--size-xl);
+}
+
+
+/* 2xl */
+/* @media (max-width: 1536px) {} */
+
+/* xl */
+@media (max-width: 1280px) {
+    .prospectus-explore {
+        padding: 2rem 5rem;
+    }
+    
+    .prospectus-explore .prospectus .prospectus__download-link1 {
+        font-size: var(--size-2xl);
+    }
+    
+    .prospectus-explore .prospectus .prospectus__download-link2 {
+        font-size: var(--size-2xl);
+    }
+    
+    .explore-enroll div {
+        padding: 1rem;
+    }
+    
+    .explore-link2 {
+        font-size: var(--size-xl);
+    }
+    
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .prospectus-explore {
+        padding: 2rem 5rem;
+    }
+    
+    .prospectus-explore .prospectus .prospectus__download-link1 {
+        font-size: var(--size-xl);
+    }
+    
+    .prospectus-explore .prospectus .prospectus__download-link2 {
+        font-size: var(--size-xl);
+    }
+
+    .explore-enroll {
+        margin-top: 1rem;
+    }
+    
+    .explore-enroll div {
+        padding: 1rem;
+    }
+    
+    .explore-link2 {
+        font-size: var(--size-lg);
+    }
+}
+
+/* md */
+/* @media (max-width: 768px) {} */
+
+/* sm */
+/* @media (max-width: 640px) {} */
+
+/* xs */
+/* @media (max-width: 475px) {} */
+
+/* xxs */
+@media (width < 475px) {
+    .prospectus-explore {
+        padding: 1rem 3rem;
+    }
+    
+    .prospectus-explore .prospectus .prospectus__download-link1 {
+        font-size: var(--size-lg);
+    }
+    
+    .prospectus-explore .prospectus .prospectus__download-link2 {
+        font-size: var(--size-lg);
+    }
+    
+    .explore-enroll div {
+        padding: 1rem;
+    }
+    
+    .explore-link2 {
+        font-size: var(--size-base);
+    }
+}

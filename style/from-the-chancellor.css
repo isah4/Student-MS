@@ -1,0 +1,213 @@
+.from-the-chancellor {
+    padding: 3rem 5rem;
+}
+
+.from-the-chancellor h2 {
+    font-size: var(--size-4xl);
+    color: rgba(0, 15, 51,);
+    margin-bottom: 2rem;
+}
+
+.from-the-chancellor__container {
+    display: flex;
+    gap: 2rem;
+}
+
+.from-the-chancellor__img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.from-the-chancellor__img  img{
+    width: 25rem;
+    height: 30rem;
+}
+
+.from-the-chancellor__categories {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.from-the-chancellor__category {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.2);
+    transition: all ease-in-out 0.3s;
+}
+
+.from-the-chancellor__category:hover {
+    transform: translateY(-0.5rem);
+}
+
+.from-the-chancellor h3 {
+    margin-bottom: 1rem;
+}
+
+.from-the-chancellor p {
+    margin-bottom: 1rem;
+}
+
+.from-the-chancellor a {
+    color: var(--clr-primary);
+    transition: all ease-in-out 0.3s;
+}
+
+.from-the-chancellor a:hover {
+    color: inherit;
+}
+
+/* 2xl */
+/* @media (max-width: 1536px) {} */
+
+/* xl */
+@media (max-width: 1280px) {
+
+}
+
+/* lg */
+/* @media (max-width: 1024px) {} */
+
+/* md */
+@media (max-width: 768px) {
+    .from-the-chancellor {
+        padding: 3rem 5rem;
+    }
+    
+    .from-the-chancellor h2 {
+        font-size: var(--size-2xl);
+    }
+    
+    .from-the-chancellor__container {
+        flex-direction: column;
+    }
+    
+    .from-the-chancellor__img {
+        justify-content: center;
+    }
+    
+    .from-the-chancellor__img  img{
+        width: 25rem;
+        height: 30rem;
+    }
+    
+    .from-the-chancellor h3 {
+        font-size: var(--size-lg);
+        margin-bottom: 1rem;
+    }
+    
+    .from-the-chancellor p {
+        font-size: var(--size-base);
+        margin-bottom: 1rem;
+    }
+    
+    .from-the-chancellor a {
+        font-size: var(--size-base);
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .from-the-chancellor {
+        padding: 3rem 5rem;
+    }
+    
+    .from-the-chancellor h2 {
+        font-size: var(--size-xl);
+    }
+    
+    .from-the-chancellor__container {
+        flex-direction: column;
+    }
+    
+    .from-the-chancellor__img {
+        justify-content: center;
+    }
+    
+    .from-the-chancellor__img  img{
+        width: 25rem;
+        height: 30rem;
+    }
+    
+    .from-the-chancellor h3 {
+        font-size: var(--size-base);
+        margin-bottom: 1rem;
+    }
+    
+    .from-the-chancellor p {
+        font-size: var(--size-sm);
+    }
+    
+    .from-the-chancellor a {
+        font-size: var(--size-sm);
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .from-the-chancellor {
+        padding: 1rem 3rem;
+    }
+    
+    .from-the-chancellor h2 {
+        font-size: var(--size-xl);
+    }
+    
+    .from-the-chancellor__container {
+        flex-direction: column;
+    }
+    
+    .from-the-chancellor__img {
+        justify-content: center;
+    }
+    
+    .from-the-chancellor__img  img{
+        width: 25rem;
+        height: 20rem;
+    }
+    
+    .from-the-chancellor h3 {
+        font-size: var(--size-sm);
+        margin-bottom: 1rem;
+    }
+    
+    .from-the-chancellor p {
+        font-size: var(--size-xs);
+    }
+    
+    .from-the-chancellor a {
+        font-size: var(--size-xs);
+    }
+}
+
+/* xxs */
+@media (max-width: 360px) {
+    .from-the-chancellor {
+        padding: 0.5rem 1rem;
+    }
+    
+    .from-the-chancellor h2 {
+        font-size: var(--size-lg);
+    }
+    
+    .from-the-chancellor__img  img{
+        height: 17rem;
+    }
+    
+    .from-the-chancellor h3 {
+        font-size: var(--size-sm);
+        margin-bottom: 1rem;
+    }
+    
+    .from-the-chancellor p {
+        font-size: var(--size-xxs);
+    }
+    
+    .from-the-chancellor a {
+        font-size: var(--size-xxs);
+    }
+}

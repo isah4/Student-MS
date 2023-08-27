@@ -1,0 +1,25 @@
+.about-our-campuses {
+    padding: 3rem 5rem;
+    background-color: var(--clr-mono2);
+}
+
+.about-our-campuses h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: var(--size-4xl);
+    margin-bottom: 2rem;
+}
+
+.about-our-campuses__cards {
+    display: flex;
+    gap: 1rem;
+}
+
+.about-our-campuses__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--clr-white);
+    padding: 1rem;
+    gap: 1rem;
+}

@@ -1,0 +1,119 @@
+.quick-links {
+    padding: 3rem 5rem;
+    background-color: rgb(220, 231, 255);
+}
+
+.links-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.quick-links .link {
+    display: flex;
+    gap: 1.2rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.quick-links .link .link__img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: 5px solid var(--clr-white);
+    overflow: hidden;
+    margin-top: 1.5rem;
+}
+
+.quick-links .link .link__img img {
+    width: 100%;
+    height: 100%;
+    transition: all ease-in-out 0.3s;
+}
+
+.quick-links .link:hover .link__img img {
+    transform: scale(1.1);
+}
+
+
+.quick-links .link ul {
+    list-style: none;
+}
+
+.quick-links .link ul li a h3 {
+    margin-bottom: 1rem;
+}
+
+.quick-links .link ul li a {
+    padding-left: 7px;
+}
+
+
+
+/* 2xl */
+/* @media (max-width: 1536px) {} */
+
+/* xl */
+/* @media (max-width: 1280px) {} */
+
+/* lg */
+@media (max-width: 1024px) {
+    .quick-links {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        font-size: var(--size-base);
+    }
+    
+    .links-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        font-size: var(--size-base);
+    }
+    
+    .quick-links .link ul li a h3 {
+        font-size: var(--size-2xl);
+    }
+}
+
+/* md */
+@media (max-width: 768px) {   
+    .quick-links .link ul li a h3 {
+        font-size: var(--size-2xl);
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {    
+    .links-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        font-size: var(--size-sm);
+    }
+    
+    .quick-links .link ul li a h3 {
+        font-size: var(--size-xl);
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .quick-links {
+        font-size: var(--size-xs);
+    }   
+    
+    .quick-links .link ul li a h3 {
+        font-size: var(--size-lg);
+    }
+}
+
+/* xxs */
+@media (max-width: 360px) {
+    .quick-links {
+        font-size: var(--size-xxs);
+    }   
+    
+    .quick-links .link ul li a h3 {
+        font-size: var(--size-base);
+    }
+}
