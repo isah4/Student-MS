@@ -15,6 +15,7 @@ import '../style/from-the-chancellor.css';
 import '../style/message-of-honor.css';
 import '../style/quick-links.css';
 import '../style/footer.css';
+import '../style/construction.css';
 
 
 // about pgs 
@@ -24,6 +25,8 @@ import '../style/about pgs sty/about-chancellor.css';
 import '../style/about pgs sty/about-our-campuses.css';
 import '../style/about pgs sty/about-tour.css';
 
+// about 
+import '../style/about pgs sty/Mission and Vision.css';
 
 import hoverMenu from './menu-hover';
 import swiperJs from './swiper';

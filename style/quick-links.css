@@ -24,6 +24,7 @@
     border: 5px solid var(--clr-white);
     overflow: hidden;
     margin-top: 1.5rem;
+    flex-shrink: 0;
 }
 
 .quick-links .link .link__img img {
@@ -39,6 +40,9 @@
 
 .quick-links .link ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
 }
 
 .quick-links .link ul li a h3 {
@@ -47,6 +51,7 @@
 
 .quick-links .link ul li a {
     padding-left: 7px;
+    font-size: var(--size-sm);
 }
 
 

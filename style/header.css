@@ -140,10 +140,12 @@
 .dropdown-list li a .icons {
     color: var(--clr-primary) !important;
     position: absolute;
-    max-width: 2rem;
-    max-height: 2rem; 
+    font-size: var(--size-2xl);
     display: none;
- 
+    top: -11px;
+    left: -55px;
+    background-color: transparent;
+    padding: none;
 }
 
 .dropdown-list li a:hover span {
@@ -152,7 +154,7 @@
 
 
 .dropdown-list li a:hover .icons {
-    display: block;
+    display: inline-block;
     color: var(--clr-primary);
 }
 
@@ -175,6 +177,7 @@
     overflow: hidden;
     color: var(--clr-white);
     font-size: var(--size-4xl);
+    text-shadow: 2px 4px 5px black;
     font-size: 800;
     text-decoration: none;
     position: relative;
@@ -228,6 +231,10 @@
     top: 80%;
 }
 
+.our-images-wrapper .our-images-card.card-wardiere .card-background {
+    background-image: url(/public/why-wardiere.jpg);
+}
+
 
 /* learning menu */
 .learning {
@@ -243,6 +250,13 @@
     top: 90%;
 }
 
+.our-images-wrapper .our-images-card.Graduate .card-background {
+    background-image: url(/public/post-graduate.jpg);
+}
+.our-images-wrapper .our-images-card.Consultancy .card-background {
+    background-image: url(/public/consult.jpg);
+}
+
 
 /* wellbeing  menu*/
 
@@ -250,17 +264,29 @@
     top: 60%;
 }
 
+.our-images-wrapper .our-images-card.gym .card-background {
+    background-image: url(/public/gym.jpg);
+}
+
 /* enrollment menu */
 
-
-
-
+.our-images-wrapper .our-images-card.entry .card-background {
+    background-image: url(/public/post-graduate.jpg);
+}
 
 /* community menu */
 
-
+.our-images-wrapper .our-images-card.happy .card-background {
+    background-image: url(/public/happy\ student.jpg);
+}
 /* latest news */
+.our-images-wrapper .our-images-card.event .card-background {
+    background-image: url(/public/event.jpg);
+}
 
+.our-images-wrapper .our-images-card.update .card-background {
+    background-image: url(/public/happy\ student.jpg);
+}
 
 
 /* nacos */
@@ -268,7 +294,13 @@
 .nacos {
     height: 15rem;
 }
+.our-images-wrapper .our-images-card.Graduate .card-background {
+    background-image: url(/public/post-graduate.jpg);
+}
 
+.our-images-wrapper .our-images-card.Graduate .card-background {
+    background-image: url(/public/post-graduate.jpg);
+}
 
 /* 2xl */
 @media (max-width: 1536px) {

@@ -1,0 +1,253 @@
+.construction {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: var(--clr-white);
+    overflow: hidden;
+    position: relative;
+}
+
+.tape {
+   width: 100rem;
+   white-space: nowrap;
+   background-color: #FEE705;
+   padding: 1rem;
+   font-size: var(--size-3xl);
+   font-weight: 900;
+   color: black;
+   margin-bottom: 2rem;
+   z-index: 1;
+   transform: rotate(3deg);
+   position: relative;
+   top: 3.5rem;
+   left: -5rem;
+}
+
+.wire {
+    height: 3rem;
+    width: 100rem;
+    display: flex;
+    gap: .5rem;
+    background-color: #FEE705;
+    transform: rotate(-3deg);
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    left: -1rem;
+    top: -3rem;
+}
+
+.wire span {
+    display: block;
+    height: 7rem;
+    background: black;
+    min-width: .5rem;
+    transform: rotate(30deg);
+    position: relative;
+    top: -1rem;
+}
+
+.equipment {
+    width: 30rem;
+    height: 15rem;
+    font-family: 'Lexend', sans-serif;
+    font-family: 'Squada One', cursive;
+    border: 1px solid var(--clr-white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.equipment h1 {
+    font-size: var(--size-10xl);
+    color: #FEE705;
+    margin-bottom: -2rem;
+}
+.equipment h2 {
+    font-size: var(--size-7xl);
+    color: #FEE705;
+}
+
+.constuction__icons {
+    position: absolute;
+    background-color: black;
+    left: -5rem;
+    bottom: 0;
+}
+
+.bigone {
+    width: 6rem;
+    height: 6rem;
+    animation: rotateleft 8s linear infinite;
+}
+.mediumone {
+    width: 4rem;
+    height: 4rem;
+    animation: rotateright 4s linear infinite;
+}
+.smallone {
+    width: 2rem;
+    height: 2rem;
+    animation: rotateleft 5s linear infinite;
+}
+
+.contstruction__wrapper.two {
+    position: absolute;
+    bottom: 2%;
+}
+
+@keyframes rotateleft {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateright {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+
+/* 2xl */
+/* @media (max-width: 1536px) {} */
+
+/* xl */
+/* @media (max-width: 1280px) {} */
+
+/* lg */
+@media (max-width: 1024px) {
+    .tape {
+       transform: rotate(3deg);
+       position: relative;
+       top: 3.5rem;
+       left: -5rem;
+    }
+    
+    .wire {
+        transform: rotate(-4deg);
+        position: relative;
+        left: -1rem;
+        top: -4rem;
+    }
+
+    .contstruction__wrapper.one {
+        position: absolute;
+        top: -1rem;
+    }
+      
+    .contstruction__wrapper.two {
+        position: absolute;
+        bottom: 0%;
+    }
+}
+
+/* md */
+@media (max-width: 768px) {
+    .tape {
+        transform: rotate(3deg);
+        position: relative;
+        top: 3.5rem;
+        left: -5rem;
+     }
+     
+     .wire {
+         transform: rotate(-5deg);
+         position: relative;
+         left: -1rem;
+         top: -5rem;
+     }
+ 
+     .contstruction__wrapper.one {
+         position: absolute;
+         top: -1rem;
+     }
+       
+     .contstruction__wrapper.two {
+         position: absolute;
+         bottom: 0%;
+     }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .tape {
+        transform: rotate(3deg);
+        position: relative;
+        top: 3.5rem;
+        left: -5rem;
+     }
+     
+     .wire {
+         transform: rotate(-6deg);
+         position: relative;
+         left: -1rem;
+         top: -6rem;
+     }
+ 
+     .contstruction__wrapper.one {
+         position: absolute;
+         top: -1rem;
+     }
+       
+     .contstruction__wrapper.two {
+         position: absolute;
+         bottom: 0%;
+     }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .tape {
+        font-size: var(--size-2xl);
+        transform: rotate(5deg);
+        position: relative;
+        top: 3.5rem;
+        left: -5rem;
+     }
+     
+     .wire {
+        height: 2.5;
+         transform: rotate(-7deg);
+         position: relative;
+         left: -1rem;
+         top: -8rem;
+     }
+ 
+     .contstruction__wrapper.one {
+         position: absolute;
+         top: 0rem;
+     }
+       
+     .contstruction__wrapper.two {
+         position: absolute;
+         bottom: -5%;
+     }
+}
+
+/* xxs */
+    @media (max-width: 410px) {
+    .tape {
+        font-size: var(--size-2xl);
+        transform: rotate(5deg);
+        position: relative;
+        top: 3.5rem;
+        left: -5rem;
+     }
+     
+     .wire {
+        height: 2.5;
+         transform: rotate(-10deg);
+         top: -11rem;
+     }
+ 
+     .contstruction__wrapper.one {
+         top: 0rem;
+     }
+       
+     .contstruction__wrapper.two {
+         bottom: -5%;
+     }
+}
